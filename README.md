@@ -4,6 +4,6 @@ IEEE/ACM International Conference on Advances in Social Networks Analysis and Mi
 # Data
 [Facebook] (https://snap.stanford.edu/data/egonets-Facebook.html) <br />
 # How to run
-1) first generate train and test pairs of nodes by generate_train_test.py <br />
-2) run distance_prediction.py to predict the shortest path between nodes<br />
+1) First generate train and test pairs of nodes by generate_train_test.py <br />
+2) Run distance_prediction.py to predict the shortest path between nodes<br />
 
