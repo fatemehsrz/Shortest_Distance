@@ -159,12 +159,28 @@ class concatenation_node2vec():
         RMSE, MAE = self.run_network(data=data1, epochs=15, batch= 32, emb_size= emb_size, graph_name=graph_name)
         
         return  RMSE, MAE , len(X_train), len(X_test) 
+
                          
-            
+if __name__=='__main__':            
               
                 
-            
-            
+	graph_names=['Facebook.edges'] 
+
+	result=[]
+
+	 
+	for graph_name in graph_names:
+	    for emb_size in [32, 128]:
+		print('shortest path for:',graph_name, emb_size)
+		G= nx.read_edgelist("./emb_deepwalk/%s"%graph_name)
+		nodes=len(G.nodes)
+		
+		con_dp=concatenation_node2vec()
+		rmse, mae , train, test = con_dp.short_path(G,graph_name, emb_size)  
+		print(graph_name, 'nodes',nodes,'train pairs', train, 'test_pairs', test, 'concatenation', 'embd_size', emb_size, 'RMSE', rmse,'MAE', mae)
+		result.append([graph_name, 'nodes',nodes,'train pairs', train, 'test_pairs', test,'node2vec','concatenation', 'embd_size', emb_size, 'RMSE', rmse,'MAE', mae])
+		             
+		    
                    
              
                     
