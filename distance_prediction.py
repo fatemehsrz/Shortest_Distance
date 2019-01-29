@@ -50,7 +50,7 @@ def create_base_network(input_dim):
 
 
 
-def siamese_harp(graph_name='Facebook.edges', emb_size=32, data=None, epochs=20):
+def siamese_net(graph_name='Facebook.edges', emb_size=32, data=None, epochs=20):
      
      
     input_dim = emb_size
@@ -191,7 +191,7 @@ if __name__ == '__main__':
                 
                 data= tr_pair1, tr_pair2,  y_train, te_pair1, te_pair2, y_test
                 
-                rmse, mae, train, test= siamese_harp(graph, 128, data, 8)
+                rmse, mae, train, test= siamese_net(graph, 128, data, 8)
                 
                 G=nx. read_edgelist('./data/%s.edges'%graph)
                 nodes= len(G.nodes())
