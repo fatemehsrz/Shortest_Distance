@@ -1,0 +1,6 @@
+training pairs:1022640
+training max length:6
+training min length:2
+number of test pairs:109978
+test max length:6
+test min length:2
