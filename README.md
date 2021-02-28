@@ -9,6 +9,6 @@ IEEE/ACM International Conference on Advances in Social Networks Analysis and Mi
 1) Learn embeddings using [Deepwalk](https://github.com/phanein/deepwalk), [node2vec](https://github.com/aditya-grover/node2vec) or [HARP](https://github.com/GTmac/HARP) <br />
 2) Generate train and test pairs of nodes by generate_train_test.py <br />
 3) Run feedforward.py or siamese.py to predict the shortest path between nodes<br />
-# ACKNOWLEDGMENT
+# Acknowledgement
 The presented work was developed within the Provenance Analytics project funded by the German Federal Ministry of Education
 and Research, grant agreement number 03PSIPT5C.
