@@ -2,7 +2,7 @@
 Shortest Path Distance Approximation Using Deep Learning Techniques <br />
 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM) (2018)<br />
 # Paper
-[Shortest Distance Approximation](https://www.researchgate.net/publication/328519934_Shortest_Path_Distance_Approximation_Using_Deep_Learning_Techniques)
+[Shortest Distance Approximation] (https://www.researchgate.net/publication/328519934_Shortest_Path_Distance_Approximation_Using_Deep_Learning_Techniques)
 # Data
 [Facebook](https://snap.stanford.edu/data/egonets-Facebook.html) <br />
 # How to run
